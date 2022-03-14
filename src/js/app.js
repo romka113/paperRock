@@ -39,7 +39,8 @@ select1.addEventListener("click", () => {
   h2.innerText = "Beat me";
   div.style.backgroundImage = "";
 });
-export const div = document.createElement("div");
+const div = document.createElement("div");
+export const divas = div;
 body.append(div);
 
 console.log(playerSelection);
