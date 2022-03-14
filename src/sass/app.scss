@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/people-playing-paper-rock-scissors-royalty-free-illustration-1583269312.jpg?crop=0.994xw:0.799xh;0.00160xw,0.195xh&resize=2048:*);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 10rem;
+  background-color: aqua;
+  padding: 20px;
+  position: absolute;
+  top: 30vh;
+  font-size: 2em;
+  font-weight: bold;
+}
+select {
+  height: 10%;
+  width: 10rem;
+  font-size: 2em;
+  position: absolute;
+  top: 20vh;
+  font-weight: bold;
+  option {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+h1 {
+  position: absolute;
+  text-align: center;
+  top: 8vh;
+  font-size: max(8vw, 20px);
+  background: linear-gradient(to right, aqua, yellow);
+}
+h2 {
+  height: max(10%, 30px);
+  width: 10rem;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  position: absolute;
+  top: 40vh;
+}
+div {
+  height: max(30%, 16rem);
+  width: 50vw;
+  position: absolute;
+  bottom: 10vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px 200px;
+}
+@media screen and (min-width: 600px) {
+  button {
+    height: 10%;
+    width: 10rem;
+    position: static;
+    font-size: 2em;
+  }
+  select {
+    height: 10%;
+    width: 10rem;
+    font-size: 2em;
+    position: static;
+
+    option {
+      font-size: 2rem;
+    }
+  }
+  h1 {
+    top: 8vh;
+    font-size: max(8vw, 30px);
+  }
+  h2 {
+    height: max(10%, 30px);
+    width: 10rem;
+    font-size: 2em;
+    position: static;
+  }
+  div {
+    height: 16rem;
+    width: 50vw;
+    position: absolute;
+    bottom: 10vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px 200px;
+  }
+}
